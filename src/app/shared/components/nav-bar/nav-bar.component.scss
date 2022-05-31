@@ -1,0 +1,12 @@
+.header{
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+    li{
+        margin-right: 10px;
+        color: red;
+        cursor: pointer;
+    }
+}
