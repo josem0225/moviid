@@ -1,12 +1,14 @@
-.header{
-    ul{
-        list-style: none;
-        display: flex;
-        justify-content: flex-end;
-    }
-    li{
-        margin-right: 10px;
-        color: red;
-        cursor: pointer;
-    }
+li{
+    margin-right: 40px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.navItems{
+    background-color: #12445F;
+    cursor: pointer;
+}
+.selected{
+    
+    // margin-right: 10px;
+
 }

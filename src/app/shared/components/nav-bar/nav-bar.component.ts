@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  public itemSelected:number = 0;
+  public menu:any =[
+    {id:0 , item: "Home"},
+    {id:1, item: "Nosotros"},
+    {id:1, item: "Contacto"}
+  ]
 
+  constructor() { }
   ngOnInit(): void {
+  }
+
+  public itemSelectedMenu(itemMenu:number){
+    this.itemSelected=itemMenu;
   }
 
 }
