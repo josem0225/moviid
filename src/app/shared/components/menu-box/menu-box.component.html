@@ -1,0 +1,19 @@
+<div  class="box"
+      (mouseleave)="hideBox()"
+      (mouseenter)="showBox()"
+      [ngClass]="{'marginBox': keyBox===0,'marginBox2': keyBox===1}"
+      *ngIf="keyBox!=-1">
+    <div class="item"
+         *ngFor="let items of menu; let i = index"
+         (mouseenter)="colorItem(i)">
+
+        <div class="insideBox"
+             [class.active]="itemBox===i">
+
+          <h3>{{items.item}}</h3>
+
+        </div>
+
+    </div>
+
+</div>

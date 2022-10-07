@@ -1,14 +1,45 @@
-li{
-    margin-right: 40px;
-    cursor: pointer;
-    margin-top: 20px;
+.color{
+  // background-color: red !important;
+  background-color: #fff !important;
+  height: auto;
+  // position: fixed;
 }
-.navItems{
-    background-color: #12445F;
+nav{
+  img{
+    width: 200px;
+  }
+  a{
     cursor: pointer;
-}
-.selected{
-    
-    // margin-right: 10px;
+    text-decoration: none;
+    color: #013F5B;
+    font-size: 18px;
+    font-family: 'montserrat';
+    font-weight: 500;
+  }
+
+  .navItem{
+    color: #013F5B;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .navItem::after{
+    content: '';
+    margin-bottom: -10px;
+    background-color: #013F5B ;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    height: 2.5px;
+  }
+
+  .mat-icon{
+    color: #013F5B;
+    margin-right: 10px;
+    cursor: pointer;
+  }
 
 }
+
+

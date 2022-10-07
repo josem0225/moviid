@@ -10,6 +10,9 @@ import { MoveComponent } from './components/move/move.component';
 import { AliadosComponent } from './components/aliados/aliados.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { FooterComponent } from './components/footer/footer.component';
+import {MatIconModule} from '@angular/material/icon';
+import { MenuBoxComponent } from './components/menu-box/menu-box.component';
+
 
 
 
@@ -24,14 +27,18 @@ import { FooterComponent } from './components/footer/footer.component';
     MoveComponent,
     AliadosComponent,
     ContactoComponent,
-    FooterComponent
+    FooterComponent,
+    MenuBoxComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatIconModule
   ],
   exports:[
     NavBarComponent,
-    HomeComponent
+    HomeComponent,
+    MenuBoxComponent,
+    DispositivoComponent,
   ]
 })
 export class SharedModuleModule { }

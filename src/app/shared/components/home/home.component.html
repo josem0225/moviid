@@ -1,3 +1,51 @@
-<div class="imagen">
-    <h6>aca va la imagen principal</h6>
+<div class="photo">
+   <div class="container">
+    <div class="row title">
+      <div class="col">
+
+        <h1><b>Moviid 1</b></h1>
+        <h1>Retoma el control de tu <b>movilidad</b> </h1>
+        <h2>Adaptación vehicular para control manual.</h2>
+       <!-- <span>
+        <h1>Retoma el control de tu <b>movilidad</b> </h1>
+        <h2>Adaptación vehicular para control manual.</h2>
+       </span>
+        -->
+      </div>
+    </div>
+   </div>
 </div>
+
+<app-dispositivo></app-dispositivo>
+
+
+<div class="container">
+
+  <div class="row contentGrid">
+    <div class="col" *ngFor="let product of product1">
+      <h1>{{product.Title}}</h1>
+      <img [src]="product.Asset" alt="">
+      <h2>{{product.Description}}</h2>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- <div class="container gridElements">
+
+  <app-dispositivo></app-dispositivo>
+
+  <div class="row contentGrid">
+
+    <div class="col">
+      <h1>It shouldn’t be this hard!</h1>
+    </div>
+
+    <div class="col">
+      <h1>LapStacker makes it easy!</h1>
+    </div>
+
+  </div>
+
+</div> -->

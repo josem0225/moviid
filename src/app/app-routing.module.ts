@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
+import { HomeComponent } from './shared/components/home/home.component';
 
 const routes: Routes = [
-  {path:'', component:NavBarComponent},
+  {path:'', component:HomeComponent},
+  {path:'home', component:HomeComponent},
   {path:'**', redirectTo: ''}
 ];
 
